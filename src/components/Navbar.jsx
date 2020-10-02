@@ -4,10 +4,10 @@ console.log(s)
 
 const Navbar = () => {
     return (
-      <div className={s.navbar}>
-      <ul className={s.list}>
+      
+      <ul className={s.navbar}>
         <li className={s.item}>
-           profile
+           Profile
         </li>
         <li className={s.item}>
            Messages
@@ -22,7 +22,7 @@ const Navbar = () => {
            Settings
         </li>
       </ul>
-    </div>
+    
     );
         
 }

@@ -1,6 +1,6 @@
 .header {
     background-color: green;
-    grid-area: h;
+    grid-column: 1 / span 2;
     padding: 15px;
   }
   

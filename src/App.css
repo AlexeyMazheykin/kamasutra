@@ -1,4 +1,7 @@
-ul {
+body {
+  color: antiquewhite;
+}
+ul, p, h1 {
   margin: 0;
   padding: 0;
 }
@@ -9,14 +12,18 @@ img {
   width: 100%;
   height: auto;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .App {
   display: grid;
-  grid-template-areas: "h h" "n c";
-  
-  grid-template-columns: 2fr 10fr;
+  grid-template-columns: minmax(100px, 1fr) 4fr;
+  grid-template-rows: minmax(100px, auto) 1fr minmax(70px, auto);
   grid-gap: 10px;
   max-width: 1380px;
   margin: 0 auto;
+  min-height: 100vh;
 }
 .item2 {
   color: aqua;

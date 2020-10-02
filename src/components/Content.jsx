@@ -13,8 +13,14 @@ const Content = () => {
           <div className={s.avatar}>
             <img className={s.avatar__pic} src={avatar} alt="ava" /> 
           </div>
-          <div className="description">
-            <h1>Alexey Mazheykin</h1>
+          <div className={s.desc}>
+            <h1 className={s.title}>Alexey Mazheykin</h1>
+            <div className={s.subtitle}>
+            <p>Date of Birth: 13 February</p>
+            <p>City: Moscow</p>
+            <p>Education: <a href="http://www.miigaik.ru/eng" target="_blank" rel="noopener noreferrer">MSUofG&C</a></p>
+            <p>Age: 37</p>
+          </div>
           </div>
 
         </div>
