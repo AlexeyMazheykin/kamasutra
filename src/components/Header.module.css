@@ -1,0 +1,16 @@
+.header {
+    background-color: green;
+    grid-area: h;
+    padding: 15px;
+  }
+  
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .logo__pic {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+  }

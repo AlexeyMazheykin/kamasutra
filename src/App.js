@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import Content from './components/content';
-import Header from './components/header';
-import Navbar from './components/navbar';
+import Content from './components/Content';
+import Header from './components/Header';
+import Navbar from './components/Navbar';
 
 
 
