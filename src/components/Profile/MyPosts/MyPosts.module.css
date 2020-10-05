@@ -1,0 +1,29 @@
+.myPosts {
+
+}
+.myPosts__title {
+  color: pink;
+}
+.posts__form {
+  display: flex;
+  margin-bottom: 20px;
+}
+.posts__form input {
+  margin-right: 10px;
+  padding: 5px;
+}
+.btn {
+  align-self: stretch;
+  background-color: #dbc06f;
+  border: none;
+  padding: 5px 10px;
+}
+.btn:hover, .btn:active, .btn:focus {
+  opacity: 0.8;
+  outline: none;
+  color: bisque;
+  box-shadow: -1px 2px 12px 0px rgba(250,229,3,1);;
+}
+
+
+

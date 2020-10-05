@@ -1,0 +1,21 @@
+
+
+.avatar {
+  width: 150px;
+  height: 150px;
+}
+.about {
+  grid-template-columns: 1fr 2fr 1fr;
+  display: grid;
+  grid-gap: 15px;
+}
+.desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.title {
+  line-height: 24px;
+}
+
+

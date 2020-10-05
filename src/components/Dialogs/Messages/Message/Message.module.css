@@ -1,0 +1,9 @@
+
+.message {
+    margin-bottom: 15px;
+}
+.message:last-child {
+    margin-bottom: 0;
+}
+
+

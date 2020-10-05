@@ -1,0 +1,4 @@
+.footer {
+    background-color: brown;
+    grid-column: 1 / span 2;
+}

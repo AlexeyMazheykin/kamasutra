@@ -1,0 +1,14 @@
+
+
+.messages {
+    padding-left: 50px;
+    border-left: gold 2px solid;
+}
+.message {
+    margin-bottom: 15px;
+}
+.message:last-child {
+    margin-bottom: 0;
+}
+
+

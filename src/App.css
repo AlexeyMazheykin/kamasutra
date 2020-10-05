@@ -5,6 +5,9 @@ ul, p, h1 {
   margin: 0;
   padding: 0;
 }
+h1, h2 {
+  font-style: italic;
+}
 li {
   list-style: none;
 }
@@ -16,6 +19,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 .App {
   display: grid;
   grid-template-columns: minmax(100px, 1fr) 4fr;
@@ -25,6 +29,6 @@ a {
   margin: 0 auto;
   min-height: 100vh;
 }
-.item2 {
-  color: aqua;
+.content__wrap {
+  background-color: #303549;
 }
