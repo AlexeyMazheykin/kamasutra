@@ -4,10 +4,10 @@ import React from "react";
 
 
 
-const DialogsItem = (props) => {
+const DialogsItem = ({user, index}) => {
     return (
-        <NavLink  className={s.dialogs__item} to={`/dialogs/${props.id}`} activeClassName={s.active} >
-            {props.name}
+        <NavLink  className={s.dialogs__item} to={`/dialogs/${index}`} activeClassName={s.active} >
+            {user.name}
         </NavLink>
     );
 };

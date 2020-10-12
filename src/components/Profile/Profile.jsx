@@ -4,13 +4,12 @@ import MyPosts from "./MyPosts/MyPosts";
 import About from "./About/About";
 import Wallpaper from "./Wallpaper/Wallpaper"
 
-const Profile = (props) => {
+const Profile = ({postsData}) => {
     return (
         <div className={s.profile}>
             <Wallpaper src="https://tinypng.com/images/social/website.jpg" />
-
             <About />
-            <MyPosts />
+            <MyPosts postsData={postsData} />
         </div>
     );
 }
