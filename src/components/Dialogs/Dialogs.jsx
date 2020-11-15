@@ -5,11 +5,11 @@ import Messages from "./Messages/Messages";
 
 
 
-const Dialogs = ({messagesData, usersData}) => {
+const Dialogs = ({state}) => {
     return (
         <div className={s.dialogs}>
-            <DialogsItems usersData={usersData} />
-            <Messages messages={messagesData} />
+            <DialogsItems usersData={state.usersData} />
+            <Messages messages={state.messagesData} />
         </div>
     )
 }

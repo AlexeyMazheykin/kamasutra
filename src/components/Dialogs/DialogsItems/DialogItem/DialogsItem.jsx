@@ -7,7 +7,10 @@ import React from "react";
 const DialogsItem = ({user, index}) => {
     return (
         <NavLink  className={s.dialogs__item} to={`/dialogs/${index}`} activeClassName={s.active} >
-            {user.name}
+            <div className={s.user__avatar}>
+                <img src={user.avatar} alt=""/>
+            </div>
+            <p>{user.name}</p>
         </NavLink>
     );
 };

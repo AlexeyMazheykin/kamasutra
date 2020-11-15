@@ -6,14 +6,9 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
 import Dialogs from "./components/Dialogs/Dialogs";
-
 import {Route, BrowserRouter, Redirect} from "react-router-dom";
 
-
-
-
-const App = ({messagesData, postsData, usersData}) => {
-
+const App = ({state, addPostToState}) => {
     return (
         <BrowserRouter>
             <div className="App">
@@ -22,11 +17,12 @@ const App = ({messagesData, postsData, usersData}) => {
                 <div className="content__wrap" >
                     <Redirect exact from="/" to="/profile" />
                     <Route path="/profile" render={(props) =>
-                        <Profile {...props} postsData={postsData} />
+                        <Profile {...props} state={state.profilePage} addPostToState={addPostToState} />
                     }
                     />
-                    <Route path="/dialogs" render={() =>
-                        <Dialogs  messagesData={messagesData} usersData={usersData} />
+                    <Route path="/dialogs" render={() => {
+
+                        return <Dialogs state={state.dialogsPage} />}
                     }
                     />
                 </div>
