@@ -14,15 +14,15 @@ const App = ({state, addPostToState}) => {
             <div className="App">
                 <Header/>
                 <Navbar/>
-                <div className="content__wrap" >
-                    <Redirect exact from="/" to="/profile" />
+                <div className="content__wrap">
+                    <Redirect exact from="/" to="/profile"/>
                     <Route path="/profile" render={(props) =>
-                        <Profile {...props} state={state.profilePage} addPostToState={addPostToState} />
+                        <Profile {...props} state={state.profilePage} addPostToState={addPostToState}/>
                     }
                     />
                     <Route path="/dialogs" render={() => {
-
-                        return <Dialogs state={state.dialogsPage} />}
+                        return <Dialogs state={state.dialogsPage}/>
+                    }
                     }
                     />
                 </div>

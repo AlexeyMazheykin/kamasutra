@@ -9,7 +9,7 @@ const MyPosts = ({postsData, addPostToState}) => {
     let newPostElement = React.createRef()
     let addPost = () => {
     let text = newPostElement.current.value;
-    addPostToState(text)
+    addPostToState(text);
         newPostElement.current.value = '';
     }
     return (
